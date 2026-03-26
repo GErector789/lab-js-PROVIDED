@@ -91,15 +91,16 @@ modelButton.addEventListener("click", changeModel);
 
     function changeDuration() {
 
-        let durationText = document.getElementById("duration-text");
-        let userInput = prompt("Enter booking duration (days):");
+    let durationText = document.getElementById("duration-text");
+    let newDuration = prompt("Enter number of days:");
 
-        if (userInput !== null && userInput !== "" && !isNaN(userInput)) {
-
-            duration = Number(userInput);
-            durationText.innerHTML = duration;
-            recalculate();
-        }
+    if (newDuration !== null) {
+        duration = Number(newDuration);
+        durationText.innerHTML = duration;
+        recalculate();
     }
-    durationButton.addEventListener("click", changeDuration);
+}
+
+durationButton.addEventListener("click", changeDuration);
+
 });
