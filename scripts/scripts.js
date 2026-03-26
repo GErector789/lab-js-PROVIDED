@@ -1,16 +1,15 @@
 /****************** YOUR NAME: Ethan Rector
-
+c
 The instructions describe the missing logic that is needed; you will translate these into JavaScript in the places indicated.
 
 You are encouraged to use the provided naming convention for ease of review.
 
 */
-document.addEventListener("DOMContentloaded", function (){ 
-/****************** create variables ******************/
+document.addEventListener("DOMContentLoaded", function (){
+    /****************** create variables ******************/
 /* create variables to hold the values for modelName and duration */
 
 // INSERT YOUR CODE HERE
-
 let modelName = "XYZ";
 let duration = 0;
 
@@ -27,7 +26,7 @@ if modelName is currently "CPRG", duration * 213 gives us the new total cost.
 
 // INSERT YOUR CODE HERE
 
-function recalulate(){
+function recalculate(){
     let costLabel = document.getElementById("calculated-cost");
     
     let totalCost;
@@ -64,9 +63,9 @@ function changeModel(){
         modelText.innerHTML = "Model CPRG";
     } else {
         modelName = "XYZ";
-        modelText.innerHTML = "Model XYZ"
+        modelText.innerHTML = "Model XYZ";
     }
-    recalulate();
+    recalculate();
 }
 modelButton.addEventListener("click", changeModel);
 
@@ -99,7 +98,7 @@ modelButton.addEventListener("click", changeModel);
 
             duration = Number(userInput);
             durationText.innerHTML = duration;
-            recalulate();
+            recalculate();
         }
     }
     durationButton.addEventListener("click", changeDuration);
